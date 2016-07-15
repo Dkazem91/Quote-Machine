@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("p").prepend("<i class='fa fa-quote-left' style='font-size:30px' aria-hidden='true'></i>      ");
 
   $('.carousel .item').eq(randomactive).addClass('active tweetthis');
-  $('a').on('click', function() {
+  $('.random').on('click', function() {
     $('.item').removeClass('tweetthis');
     randomcolor = color[Math.floor(Math.random() * color.length)];
     $('.item').animate({
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('button').css('background-color', randomcolor);
   });
 
-  $('a').on('click', function(event) {
+  $('.random').on('click', function(event) {
     var duration = 700;
     setTimeout(function() {
       $('#myCarousel').carousel(itemnumber);
