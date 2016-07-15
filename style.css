@@ -22,8 +22,13 @@ body {
   padding: 5px;
 }
 
-a {
-  padding-left: 70%;
+.tweet{
+ float:left;
+  width:17%;
+}
+.random {
+  float:right;
+  width:25%;
 }
 
 button {
