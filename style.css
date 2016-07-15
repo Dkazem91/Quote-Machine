@@ -1,0 +1,52 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+body {
+
+  transition: background-color, 2s;
+}
+
+.container {
+  margin-top: 5%;
+  width: 25%;
+}
+
+#myCarousel {
+  transition: color, 2s;
+  color: black;
+}
+
+.carousel-inner {
+  background-color: white;
+  font-family: Arial;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+a {
+  padding-left: 70%;
+}
+
+button {
+  transition: color, 2s;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  float: right;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+footer {
+  float: right;
+  transition: color, 2s;
+}
+
+p {
+  display:none;
+  word-wrap: break-word;
+  font-size: 20px;
+}
+
+blockquote {
+  border: 0;
+}
