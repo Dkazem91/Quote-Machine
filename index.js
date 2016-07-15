@@ -28,8 +28,10 @@ $(document).ready(function() {
     var duration = 700;
     setTimeout(function() {
       $('#myCarousel').carousel(itemnumber);
+      $('.carousel .item').eq(itemnumber).addClass('tweetthis');
       var keeprandom = Math.floor(Math.random() * ($('.item').length) - 1);
       itemnumber = (keeprandom === itemnumber) ? itemnumber + 1 : keeprandom;
+      
       $('.item').animate({
         opacity: 1
       }, 500);
