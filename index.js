@@ -10,8 +10,9 @@ $(document).ready(function() {
   $('button').css('background-color', randomcolor);
   $("p").prepend("<i class='fa fa-quote-left' style='font-size:30px' aria-hidden='true'></i>      ");
 
-  $('.carousel .item').eq(randomactive).addClass('active');
+  $('.carousel .item').eq(randomactive).addClass('active tweetthis');
   $('a').on('click', function() {
+    $('.item').removeClass('tweetthis');
     randomcolor = color[Math.floor(Math.random() * color.length)];
     $('.item').animate({
       opacity: 0
@@ -34,5 +35,10 @@ $(document).ready(function() {
       }, 500);
     }, duration);
 
+  });
+    $('.tweet').on('click',function(){
+    $(this).attr("href","http://twitter.com/home/?status="+ $('.tweetthis').text());
+ 
+    
   });
 });
