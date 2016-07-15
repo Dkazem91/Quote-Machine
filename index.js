@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  var itemnumber = 5;
-  var randomactive = Math.floor(Math.random() * 14);
+  var itemnumber = 7;
+  var randomactive = Math.floor(Math.random() * $('.item').length));
   var color = ['#F98866', '#FF420E', '#80BD9E', '#89DA59', '#90AFC5', '#336B87', '#2A3132', '#763626'];
   var randomcolor = color[Math.floor(Math.random() * color.length)];
   $('body, .container, p').fadeIn('slow');
@@ -27,7 +27,7 @@ $(document).ready(function() {
     var duration = 700;
     setTimeout(function() {
       $('#myCarousel').carousel(itemnumber);
-      var keeprandom = Math.floor(Math.random() * 14);
+      var keeprandom = Math.floor(Math.random() * $('.item').length));
       itemnumber = (keeprandom === itemnumber) ? itemnumber + 1 : keeprandom;
       $('.item').animate({
         opacity: 1
